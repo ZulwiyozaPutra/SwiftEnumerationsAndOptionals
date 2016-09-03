@@ -1,7 +1,14 @@
-//: [Previous](@previous)
+let firstName: String? = "Zulwiyoza"
+let userName: String = "ZulwiyozaPutra"
 
-import Foundation
+var displayName: String
 
-var str = "Hello, playground"
+if firstName != nil {
+    displayName = firstName!
+} else {
+    displayName = userName
+}
 
-//: [Next](@next)
+displayName = firstName != nil ? firstName! : userName
+
+displayName = firstName ?? userName
